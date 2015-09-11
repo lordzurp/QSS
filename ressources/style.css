@@ -1,0 +1,44 @@
+/* Global Styles */
+
+body {
+	margin:0px;
+	background-image: url("your.awesome.background.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #6e6e6e;
+}
+/* Classes */
+.navigation {
+	background-color: #34495e;
+	height: 3px;
+}
+.check {
+	width: 100%;
+	background-color: rgba(150,150,150,0.7);
+	display: inline-block;
+}
+.status {
+	padding: 0px;
+	margin-right: 15px;
+	padding-bottom: 10px;
+	display: inline-block;
+}
+.label {
+	display: inline-block;
+}
+/* ID Styles */
+#time {
+	vertical-align: top;
+	padding-bottom: 16px;
+	padding-left: 20px;
+	padding-top: 16px;
+	display: inline-block;
+}
+#reload {
+	vertical-align: top;
+	padding: 21px;
+	display: inline-block;
+}
+#status {
+	display: inline-block;
+}

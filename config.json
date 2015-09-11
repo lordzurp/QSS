@@ -1,0 +1,80 @@
+{
+	"Servers": [
+		{
+			"Name": "Odin",
+			"IP": "8.8.8.8",
+			"TimeOut": 40,
+			"Services": [
+				"http",
+				"httpS",
+				"Monit",
+				"Webmin",
+				"Imap",
+				"Pop3"
+			]
+		},
+		{
+			"Name": "Loki",
+			"IP": "8.8.4.4",
+			"TimeOut": 85,
+			"Services": [
+				"http",
+				"httpS",
+				"dns",
+				"SMTP",
+				"Imap"
+			]
+		},
+		{
+			"Name": "Google.fr",
+			"IP": "216.58.211.67",
+			"TimeOut": 25,
+			"Services": [
+				"http",
+				"httpS"
+			]
+		}
+	],
+	"Services": [
+		{
+			"name": "dns",
+			"port": 53
+		},
+		{
+			"name": "http",
+			"port": 80
+		},
+		{
+			"name": "httpS",
+			"port": 443
+		},
+		{
+			"name": "Monit",
+			"port": 8237
+		},
+		{
+			"name": "Webmin",
+			"port": 10000
+		},
+		{
+			"name": "SMTP",
+			"port": 587
+		},
+		{
+			"name": "Imap",
+			"port": 993
+		},
+		{
+			"name": "Pop3",
+			"port": 110
+		},
+		{
+			"name": "SubSonic",
+			"port": 4040
+		},
+		{
+			"name": "Transmission",
+			"port": 9091
+		}
+	]
+}
