@@ -1,19 +1,12 @@
 #Quick Server Supervision
 
-###Monitoring de services web pour serveurs dédiés
+Monitoring de services web pour serveurs dédiés
 
 
-#1 for testing purpose
-##2 for testing purpose
-###3 for testing purpose
-####4 for testing purpose
-#####5 for testing purpose
-######6 for testing purpose
-#######7 for testing purpose
 
 
-####config.json
-#####Ici est stocké la liste des serveurs à surveiller, et la liste des services idsponibles+
+####config
+La config est stocké dans le fichier config.json
 
 #####Servers
 On trouve 4 paramètres :
@@ -30,11 +23,15 @@ Chaque service est à déclarer ici :
 
 
 ### Historique
-#####v1.0 - 09/2015
-Initial release
+####v1.0 - 09/2015
+#####Initial release
+#####New :
+#####Bugfix :
+######Misc :
 
-*******************
-The MIT License (MIT)
+
+#####License
+######The MIT License (MIT)
 
 Copyright (c) 2015 lordzurp
 http://www.zurp.me
@@ -56,5 +53,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-*******************
