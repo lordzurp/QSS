@@ -1,7 +1,15 @@
 {
 	"Servers": [
 		{
-			"name": "GitHub.com",
+			"name": "Google",
+			"address": "8.8.8.8",
+			"timeout": 25,
+			"services": [
+				"dns"
+			]
+		},
+		{
+			"name": "GitHub",
 			"address": "192.30.252.129",
 			"timeout": 40,
 			"services": [
@@ -18,12 +26,11 @@
 			]
 		},
 		{
-			"name": "Google",
-			"address": "www.google.fr",
-			"timeout": 25,
+			"name": "Yahoo Mail",
+			"address": "smtp.mail.yahoo.com",
+			"timeout": 100,
 			"services": [
-				"http",
-				"https"
+				"smtps"
 			]
 		},
 		{

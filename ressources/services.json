@@ -17,10 +17,6 @@
 			"port": 443
 		},
 		{
-			"name": "OpenVPN",
-			"port": 1194
-		},
-		{
 			"name": "mySQL",
 			"port": 3306
 		},
@@ -49,14 +45,6 @@
 			"port": 995
 		},
 		{
-			"name": "Monit",
-			"port": 8237
-		},
-		{
-			"name": "Webmin",
-			"port": 10000
-		},
-		{
 			"name": "SubSonic",
 			"port": 4040
 		},
@@ -67,6 +55,14 @@
 		{
 			"name": "Transmission",
 			"port": 9091
+		},
+		{
+			"name": "Monit",
+			"port": 8237
+		},
+		{
+			"name": "Webmin",
+			"port": 10000
 		}
 	]
 }
