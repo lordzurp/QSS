@@ -30,8 +30,8 @@ Chaque service est à déclarer ici :
 ######Misc :
 
 
-#####License
-######The MIT License (MIT)
+###License
+#####The MIT License (MIT)
 
 Copyright (c) 2015 lordzurp
 http://www.zurp.me
