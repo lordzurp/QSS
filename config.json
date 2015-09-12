@@ -1,33 +1,27 @@
 {
 	"Servers": [
 		{
-			"Name": "Odin",
-			"IP": "8.8.8.8",
+			"Name": "GitHub.com",
+			"IP": "192.30.252.129",
 			"TimeOut": 40,
 			"Services": [
 				"http",
-				"httpS",
-				"Monit",
-				"Webmin",
-				"Imap",
-				"Pop3"
+				"httpS"
 			]
 		},
 		{
-			"Name": "Loki",
-			"IP": "8.8.4.4",
+			"Name": "Microsoft Live",
+			"IP": "157.55.1.215",
 			"TimeOut": 85,
 			"Services": [
 				"http",
 				"httpS",
-				"dns",
-				"SMTP",
-				"Imap"
+				"Pop3"
 			]
 		},
 		{
-			"Name": "Google.fr",
-			"IP": "216.58.211.67",
+			"Name": "Google",
+			"IP": "www.google.fr",
 			"TimeOut": 25,
 			"Services": [
 				"http",
@@ -66,7 +60,7 @@
 		},
 		{
 			"name": "Pop3",
-			"port": 110
+			"port": 995
 		},
 		{
 			"name": "SubSonic",
