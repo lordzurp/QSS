@@ -1,9 +1,39 @@
-# QSS
-##Quick Server Supervision
+#Quick Server Supervision
 
-####Monitoring de services web pour serveurs dédiés
+###Monitoring de services web pour serveurs dédiés
 
-#################
+
+#1 for testing purpose
+##2 for testing purpose
+###3 for testing purpose
+####4 for testing purpose
+#####5 for testing purpose
+######6 for testing purpose
+#######7 for testing purpose
+
+
+####config.json
+#####Ici est stocké la liste des serveurs à surveiller, et la liste des services idsponibles+
+
+#####Servers
+On trouve 4 paramètres :
+- name : le nom affiché de la machine
+- address : son adresse (nom de domaine ou IP)
+- timeout : la limite de réponse du ping. utile pour les serveurs à l'étranger : un serveur canadien aura du mal à réondre en moins de 10ms
+- services : les services à surveiller sur cette machine, tiré de la liste des services dispo
+
+#####Services
+Chaque service est à déclarer ici :
+- name : le nom affiché du service
+- port : le port à tester
+
+
+
+### Historique
+#####v1.0 - 09/2015
+Initial release
+
+*******************
 The MIT License (MIT)
 
 Copyright (c) 2015 lordzurp
@@ -27,26 +57,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-#################
-
-
-++ config.json++
-+Ici est stocké la liste des serveurs à surveiller, et la liste des services idsponibles+
-
-+Servers+
-On trouve 4 paramètres :
-- name : le nom affiché de la machine
-- address : son adresse (nom de domaine ou IP)
-- timeout : la limite de réponse du ping. utile pour les serveurs à l'étranger : un serveur canadien aura du mal à réondre en moins de 10ms
-- services : les services à surveiller sur cette machine, tiré de la liste des services dispo
-
-+Services+
-Chaque service est à déclarer ici :
-- name : le nom affiché du service
-- port : le port à tester
-
-
-
-### Historique
-#####v1.0 - 09/2015
-Initial release
+*******************
