@@ -1,0 +1,72 @@
+{
+	"Services": [
+		{
+			"name": "dns",
+			"port": 53
+		},
+		{
+			"name": "http",
+			"port": 80
+		},
+		{
+			"name": "http alt",
+			"port": 8080
+		},
+		{
+			"name": "https",
+			"port": 443
+		},
+		{
+			"name": "OpenVPN",
+			"port": 1194
+		},
+		{
+			"name": "mySQL",
+			"port": 3306
+		},
+		{
+			"name": "smtp",
+			"port": 25
+		},
+		{
+			"name": "smtps",
+			"port": 587
+		},
+		{
+			"name": "imap",
+			"port": 143
+		},
+		{
+			"name": "imaps",
+			"port": 993
+		},
+		{
+			"name": "pop3",
+			"port": 110
+		},
+		{
+			"name": "pop3s",
+			"port": 995
+		},
+		{
+			"name": "Monit",
+			"port": 8237
+		},
+		{
+			"name": "Webmin",
+			"port": 10000
+		},
+		{
+			"name": "SubSonic",
+			"port": 4040
+		},
+		{
+			"name": "SubSonic ssl",
+			"port": 4043
+		},
+		{
+			"name": "Transmission",
+			"port": 9091
+		}
+	]
+}

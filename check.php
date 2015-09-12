@@ -62,22 +62,25 @@ function pingDomain($name,$ip,$port,$limit=10) {
 		$tooltip='ping : ' . $status . 'ms';
 	}
 	
-	$return = '<span class="label label-' . $result . '" data-toggle="tooltip" data-placement="top" title="' . $tooltip . '">'.$name.' <span class="glyphicon ' . $icon . '" aria-hidden="true"></span></span>';
+	$return = '<span class="label label-' . $result . '" title="' . $tooltip . '">'.$name.' <span class="glyphicon ' . $icon . '" aria-hidden="true"></span></span>';
 	return $return;
 }
 
-$json_file = file_get_contents('ressources/config.json');
+$json_file = file_get_contents('ressources/services.json');
 $config = json_decode($json_file);
 
 foreach ($config->Services as $service) {
 	$services_dispo[$service->name] = $service->port ;
 }
 
+$json_file = file_get_contents('ressources/config.json');
+$config = json_decode($json_file);
+
 $display = '';
 foreach ($config->Servers as $server) {
 	$display .= '
-		<div class="status">
-			<h4><span class="label label-info" data-toggle="tooltip" data-placement="top" title="' . $server->address . '">' . $server->name . '</span></h4>';
+		<div id="' . $server->name . '" class="status">
+			<h4><span class="label label-info" title="' . $server->address . '">' . $server->name . '</span></h4>';
 	foreach ($server->services as $service) {
 		$display .= '
 				' . pingDomain($service,$server->address,$services_dispo[$service], $server->timeout);
