@@ -1,29 +1,29 @@
 {
 	"Servers": [
 		{
-			"Name": "GitHub.com",
-			"IP": "192.30.252.129",
-			"TimeOut": 40,
-			"Services": [
+			"name": "GitHub.com",
+			"address": "192.30.252.129",
+			"timeout": 40,
+			"services": [
 				"http",
 				"httpS"
 			]
 		},
 		{
-			"Name": "Microsoft Live",
-			"IP": "157.55.1.215",
-			"TimeOut": 85,
-			"Services": [
+			"name": "Microsoft Live",
+			"address": "157.55.1.215",
+			"timeout": 85,
+			"services": [
 				"http",
 				"httpS",
 				"Pop3"
 			]
 		},
 		{
-			"Name": "Google",
-			"IP": "www.google.fr",
-			"TimeOut": 25,
-			"Services": [
+			"name": "Google",
+			"address": "www.google.fr",
+			"timeout": 25,
+			"services": [
 				"http",
 				"httpS"
 			]
