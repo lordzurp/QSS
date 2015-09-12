@@ -25,6 +25,14 @@
 				"http",
 				"https"
 			]
+		},
+		{
+			"name": "mySQL demo",
+			"address": "ensembldb.ensembl.org",
+			"timeout": 100,
+			"services": [
+				"mySQL"
+			]
 		}
 	]
 }

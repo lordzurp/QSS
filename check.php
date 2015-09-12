@@ -73,7 +73,7 @@ foreach ($config->Services as $service) {
 	$services_dispo[$service->name] = $service->port ;
 }
 
-$json_file = file_get_contents('ressources/config.json');
+$json_file = file_get_contents('ressources/servers.json');
 $config = json_decode($json_file);
 
 $display = '';
