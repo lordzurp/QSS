@@ -39,12 +39,9 @@
 			function refresh()
 			{
 				time();
-				show();
-				$( "#status" ).load( "check.php" , hide() );
-				setTimeout(refresh, 30000);
+				$( "#status" ).load( "check.php " );
+				setTimeout(refresh, 1000);
 			}
-			function show() { document.getElementById('reload').style.visibility='visible'; }
-			function hide() { document.getElementById('reload').style.visibility='hidden'; }
 		</script>
 	</head>
 	
@@ -52,7 +49,6 @@
 		<div class="navigation"></div>
 		<div class="check">
 			<div id="time" ></div>
-			<div id="reload" ><i class="fa fa-spinner fa-pulse fa-2x"></i></div>
 			<div id="status" ></div>
 		</div>
 		<div class="navigation"></div>
@@ -63,7 +59,7 @@
 		
 		<footer class="footer">
 			<div class="container">
-				Propulsé par QSS © lordzurp 2015
+				Propulsé par <a href="http://www.zurp.me/about.html" >QSS</a> © lordzurp 2015
 			</div>
 		</footer>
 		
