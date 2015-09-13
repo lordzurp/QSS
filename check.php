@@ -7,7 +7,7 @@ v1.0 - 09/2015
 The MIT License (MIT)
 
 Copyright (c) 2015 lordzurp
-http://www.zurp.me
+http://www.zurp.me/demo/
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -62,7 +62,7 @@ function pingDomain($name,$ip,$port,$limit=10) {
 		$tooltip='ping : ' . $status . 'ms';
 	}
 	
-	$return = '<span class="label label-' . $result . '" title="' . $tooltip . '">'.$name.' <span class="glyphicon ' . $icon . '" aria-hidden="true"></span></span>';
+	$return = '<span class="label label-' . $result . '" data-toggle="tooltip" data-placement="bottom" title="' . $tooltip . '">'.$name.' <span class="glyphicon ' . $icon . '" aria-hidden="true"></span></span>';
 	return $return;
 }
 
@@ -76,11 +76,12 @@ foreach ($config->Services as $service) {
 $json_file = file_get_contents('ressources/servers.json');
 $config = json_decode($json_file);
 
-$display = '';
+$display = '				
+';
 foreach ($config->Servers as $server) {
 	$display .= '
-		<div id="' . $server->name . '" class="status">
-			<h4><span class="label label-info" title="' . $server->address . '">' . $server->name . '</span></h4>';
+		<div id="' . $server->name . '" class="status bs-callout bs-callout-primary">
+			<h4><span data-toggle="tooltip" data-placement="right" title="' . $server->address . '">' . $server->name . '</span></h4>';
 	foreach ($server->services as $service) {
 		$display .= '
 				' . pingDomain($service,$server->address,$services_dispo[$service], $server->timeout);
@@ -90,5 +91,4 @@ foreach ($config->Servers as $server) {
 ';
 }
 echo $display;
-
 ?>
