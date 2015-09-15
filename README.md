@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/lordzurp/QSS/master/ressources/favicon.32.png]#Quick Server Supervision
+# ![](https://raw.githubusercontent.com/lordzurp/QSS/master/ressources/favicon.32.png] Quick Server Supervision
 
 ![](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
 
