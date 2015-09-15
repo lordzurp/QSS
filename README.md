@@ -10,7 +10,7 @@
 
 Monitoring de services web pour serveurs dédiés
 
-![ScreenShot](https://raw.githubusercontent.com/lordzurp/QSS/master/ressources/screenshot.png)
+![ScreenShot](https://raw.githubusercontent.com/lordzurp/QSS/master/demo.png)
 
 
 
