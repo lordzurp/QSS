@@ -1,6 +1,6 @@
 #Quick Server Supervision
 
-[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)]
+![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
 
 Monitoring de services web pour serveurs dédiés
 
