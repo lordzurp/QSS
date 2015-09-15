@@ -2,15 +2,15 @@
 
 
 
-[![GitHub release](http://img.shields.io/github/release/lordzurp/QSS.svg?style=flat-square)][release]
-[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)][license] 
+[![GitHub release](http://img.shields.io/badges/Version-1.0-brightgreen.svg?style=flat)][release]
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)][license] 
 
 [release]: https://github.com/lordzurp/QSS/releases
 [license]: https://raw.githubusercontent.com/lordzurp/QSS/master/LICENSE
 
 Monitoring de services web pour serveurs dédiés
 
-![ScreenShot](https://raw.githubusercontent.com/lordzurp/QSS/master/demo.png)
+![ScreenShot](https://raw.githubusercontent.com/lordzurp/QSS/master/ressources/demo.png)
 
 
 
