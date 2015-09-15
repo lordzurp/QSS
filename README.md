@@ -1,6 +1,6 @@
-#Quick Server Supervision
+![](https://raw.githubusercontent.com/lordzurp/QSS/master/ressources/favicon.32.png]#Quick Server Supervision
 
-![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
+![](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
 
 Monitoring de services web pour serveurs dédiés
 
