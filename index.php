@@ -16,11 +16,11 @@
 		<link rel="stylesheet" href="ressources/style.css" />
 		
 		<!-- jQuery -->
-		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="ressources/jquery-2.1.4.min.js"></script>
 		
 		<!-- Bootstrap core CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="ressources/bootstrap-3.3.6-dist/css/bootstrap.css">
+		<script src="ressources/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
 		
 		<script type="text/javascript">
 			function refresh()
