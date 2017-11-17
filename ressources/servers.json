@@ -1,44 +1,45 @@
 {
 	"Servers": [
 		{
-			"name": "Google",
-			"address": "8.8.8.8",
+			"name": "Crow",
+			"address": "10.42.0.1",
 			"timeout": 25,
 			"services": [
-				"dns"
-			]
-		},
-		{
-			"name": "GitHub",
-			"address": "192.30.252.129",
-			"timeout": 40,
-			"services": [
+				"dns",
 				"http",
 				"https"
 			]
 		},
 		{
-			"name": "Microsoft Live",
-			"address": "157.55.1.215",
-			"timeout": 85,
+			"name": "Hawk",
+			"address": "10.42.0.2",
+			"timeout": 25,
 			"services": [
-				"pop3s"
+				"dns",
+				"http",
+				"https"
 			]
 		},
 		{
-			"name": "Yahoo Mail",
-			"address": "smtp.mail.yahoo.com",
-			"timeout": 100,
+			"name": "Bart",
+			"address": "10.42.0.4",
+			"timeout": 25,
 			"services": [
-				"smtps"
+				"dns",
+				"http",
+				"https"
 			]
 		},
 		{
-			"name": "mySQL demo",
-			"address": "ensembldb.ensembl.org",
-			"timeout": 100,
+			"name": "Seth",
+			"address": "10.42.0.16",
+			"timeout": 25,
 			"services": [
-				"mySQL"
+				"http",
+				"https",
+				"SubSonic",
+				"Transmission",
+				"Plex Media Server"
 			]
 		}
 	]

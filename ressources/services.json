@@ -57,6 +57,10 @@
 			"port": 9091
 		},
 		{
+			"name": "Plex Media Server",
+			"port": 32400
+		},
+		{
 			"name": "Monit",
 			"port": 8237
 		},
