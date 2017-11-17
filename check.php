@@ -81,7 +81,7 @@ $display = '
 foreach ($config->Servers as $server) {
 	$display .= '
 		<div id="' . $server->name . '" class="status bs-callout bs-callout-primary">
-			<h4><span data-toggle="tooltip" data-placement="right" title="' . $server->address . '">' . $server->name . '</span></h4>';
+			<h4><span data-toggle="tooltip" data-placement="right" title="' . $server->address . '">' . $server->name . '</span><a href="' . $server->address . '"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a></h4>';
 	foreach ($server->services as $service) {
 		$display .= '
 				' . pingDomain($service,$server->address,$services_dispo[$service], $server->timeout);
