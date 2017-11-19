@@ -1,0 +1,189 @@
+{
+"Surveys": [
+	{
+		"title": "infra",
+		"list": [
+			{
+				"name": "Crow",
+				"address": "10.42.0.1",
+				"timeout": 25,
+				"services": [
+					0,
+					19,
+					1
+				]
+			},
+			{
+				"name": "Hawk",
+				"address": "10.42.0.4",
+				"timeout": 25,
+				"services": [
+					1
+				]
+			},
+			{
+				"name": "Bart",
+				"address": "10.42.0.5",
+				"timeout": 25,
+				"services": [
+					1
+				]
+			},
+			{
+				"name": "Seth",
+				"address": "seth",
+				"timeout": 25,
+				"services": [
+					19,
+					1,
+					2,
+					16,
+					11,
+					13,
+					14
+				]
+			}
+		]
+	},
+	{
+		"title": "Multimedia",
+		"list": [
+			{
+				"name": "Ampli",
+				"address": "muzika",
+				"timeout": 25,
+				"services": [
+					1,
+					17
+				]
+			},
+			{
+				"name": "TV",
+				"address": "zurptv",
+				"timeout": 25,
+				"services": [
+					1
+				]
+			},
+			{
+				"name": "Shield TV",
+				"address": "shield",
+				"timeout": 25,
+				"services": [
+					18
+				]
+			},
+			{
+				"name": "Imprimante",
+				"address": "printer",
+				"timeout": 25,
+				"services": [
+					1
+				]
+			}
+		]
+	}
+],
+	"Services_list": [
+		{
+			"id": 0,
+			"name": "dns",
+			"port": 53
+		},
+		{
+			"id": 1,
+			"name": "http",
+			"port": 80
+		},
+		{
+			"id": 2,
+			"name": "monitorix",
+			"port": 8080
+		},
+		{
+			"id": 3,
+			"name": "https",
+			"port": 443
+		},
+		{
+			"id": 4,
+			"name": "mySQL",
+			"port": 3306
+		},
+		{
+			"id": 5,
+			"name": "smtp",
+			"port": 25
+		},
+		{
+			"id": 6,
+			"name": "smtps",
+			"port": 587
+		},
+		{
+			"id": 7,
+			"name": "imap",
+			"port": 143
+		},
+		{
+			"id": 8,
+			"name": "imaps",
+			"port": 993
+		},
+		{
+			"id": 9,
+			"name": "pop3",
+			"port": 110
+		},
+		{
+			"id": 10,
+			"name": "pop3s",
+			"port": 995
+		},
+		{
+			"id": 11,
+			"name": "SubSonic",
+			"port": 4040
+		},
+		{
+			"id": 12,
+			"name": "SubSonic ssl",
+			"port": 4043
+		},
+		{
+			"id": 13,
+			"name": "Transmission",
+			"port": 9091
+		},
+		{
+			"id": 14,
+			"name": "Plex Media Server",
+			"port": 32400
+		},
+		{
+			"id": 15,
+			"name": "Monit",
+			"port": 8237
+		},
+		{
+			"id": 16,
+			"name": "Webmin",
+			"port": 10000
+		},
+		{
+			"id": 17,
+			"name": "Telnet",
+			"port": 23
+		},
+		{
+			"id": 18,
+			"name": "Heartbeat",
+			"port": 9000
+		},
+		{
+			"id": 19,
+			"name": "SSH",
+			"port": 22
+		}
+	]
+}

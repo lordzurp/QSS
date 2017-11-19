@@ -3,6 +3,7 @@
 /* 
 QSS - Quick Server Supervision
 v1.0 - 09/2015
+v1.2 - 11-2017 - merge json config files
 
 The MIT License (MIT)
 
@@ -62,33 +63,48 @@ function pingDomain($name,$ip,$port,$limit=10) {
 		$tooltip='ping : ' . $status . 'ms';
 	}
 	
-	$return = '<span class="label label-' . $result . '" data-toggle="tooltip" data-placement="bottom" title="' . $tooltip . '">'.$name.' <span class="glyphicon ' . $icon . '" aria-hidden="true"></span></span>';
+	$return = '<a href="http://' . $ip . ':' . $port . '" target="_blank" ><span class="label label-' . $result . '" data-toggle="tooltip" data-placement="bottom" title="' . $tooltip . '">'.$name.' <span class="glyphicon ' . $icon . '" aria-hidden="true"></span></span></a>';
 	return $return;
 }
 
-$json_file = file_get_contents('ressources/services.json');
+$json_file = file_get_contents('ressources/config.json');
 $config = json_decode($json_file);
 
-foreach ($config->Services as $service) {
-	$services_dispo[$service->name] = $service->port ;
+foreach ($config->Services_list as $service) {
+	$service_name[$service->id] = $service->name ;
+	$service_port[$service->id] = $service->port ;
 }
 
-$json_file = file_get_contents('ressources/servers.json');
-$config = json_decode($json_file);
-
-$display = '				
+$display = '
 ';
-foreach ($config->Servers as $server) {
-	$display .= '
-		<div id="' . $server->name . '" class="status bs-callout bs-callout-primary">
-			<h4><span data-toggle="tooltip" data-placement="right" title="' . $server->address . '">' . $server->name . '</span><a href="' . $server->address . '"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a></h4>';
-	foreach ($server->services as $service) {
+
+foreach ($config->Surveys as $survey) {
+	$display .= '				
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">' . $survey->title . '</h3>
+			</div>
+			<div class="panel-body check">
+	';
+	
+	foreach ($survey->list as $server) {
 		$display .= '
-				' . pingDomain($service,$server->address,$services_dispo[$service], $server->timeout);
+			<div id="' . $server->name . '" class="status bs-callout bs-callout-primary">
+				<h4><a href="http://' . $server->address . '" target="_blank" ></a>&nbsp;<span data-toggle="tooltip" data-placement="right" title="' . $server->address . '" >' . $server->name . '</span></h4>';
+		foreach ($server->services as $service) {
+			$display .= '
+					' . pingDomain($service_name[$service],$server->address,$service_port[$service], $server->timeout);
+		}
+		$display .= '
+			</div>
+	';
 	}
+
 	$display .= '
 		</div>
-';
+	</div>
+		';
 }
+
 echo $display;
 ?>
