@@ -14,27 +14,42 @@ Monitoring de services web pour serveurs dédiés
 
 
 
-####config
+#### config
+
 La config est stocké dans le fichier config.json
 
-#####Servers
+##### Servers
+
 On trouve 4 paramètres :
 - name : le nom affiché de la machine
 - address : son adresse (nom de domaine ou IP)
 - timeout : la limite de réponse du ping. utile pour les serveurs à l'étranger : un serveur canadien aura du mal à répondre en moins de 10ms
 - services : les services à surveiller sur cette machine, tiré de la liste des services dispo
 
-#####Services
+##### Services
+
 Chaque service est à déclarer ici :
+- id : index
 - name : le nom affiché du service
 - port : le port à tester
 
 
 
 ### Historique
-####v1.0 - 09/2015
-#####Initial release
-#####New :
-#####Bugfix :
-######Misc :
 
+#### v1.0 - 09/2015
+
+##### Initial release
+##### New :
+##### Bugfix :
+###### Misc :
+
+#### v1.2 - 11/2017
+
+##### New :
+
+- bootstrap et JQuery en local
+- .json unique
+
+##### Bugfix :
+###### Misc :
