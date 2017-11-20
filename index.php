@@ -25,15 +25,15 @@
 		<script src="ressources/jsoneditor.min.js"></script>
 		<script>
 		// Set the default CSS theme and icon library globally
-			JSONEditor.defaults.theme = 'foundation5';
-			JSONEditor.defaults.iconlib = 'fontawesome4';
+			JSONEditor.defaults.theme = 'bootstrap3';
+			JSONEditor.defaults.iconlib = 'undefined';
 		</script>
 			
 		<script type="text/javascript">
 			function refresh()
 			{
 				//document.getElementById('reload').style.visibility='visible';
-				$( "#status" ).load( "check.php" , function() { document.getElementById('reload').style.visibility='hidden'; $('[data-toggle="tooltip"]').tooltip(); });
+				$( "#status" ).load( "check.php" , function() { $('[data-toggle="tooltip"]').tooltip(); });
 			}
 		</script>
 	</head>

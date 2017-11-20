@@ -2,7 +2,7 @@
 
 
 
-[![GitHub release](http://img.shields.io/badge/Version-1.0-brightgreen.svg?style=flat)][release]
+[![GitHub release](http://img.shields.io/badge/Version-1.2-brightgreen.svg?style=flat)][release]
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)][license] 
 
 [release]: https://github.com/lordzurp/QSS/releases
@@ -21,7 +21,7 @@ La config est stocké dans le fichier config.json
 On trouve 4 paramètres :
 - name : le nom affiché de la machine
 - address : son adresse (nom de domaine ou IP)
-- timeout : la limite de réponse du ping. utile pour les serveurs à l'étranger : un serveur canadien aura du mal à réondre en moins de 10ms
+- timeout : la limite de réponse du ping. utile pour les serveurs à l'étranger : un serveur canadien aura du mal à répondre en moins de 10ms
 - services : les services à surveiller sur cette machine, tiré de la liste des services dispo
 
 #####Services
