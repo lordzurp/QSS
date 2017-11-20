@@ -16,11 +16,12 @@
 		<link rel="stylesheet" href="ressources/style.css" />
 		
 		<!-- jQuery -->
-		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="dist/js/jquery-2.2.4.min.js"></script>
 		
 		<!-- Bootstrap core CSS -->
-		<link rel="stylesheet" id="theme_stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" id="theme_stylesheet" href="dist/css/bootstrap.min.css">
+		<link rel="stylesheet" id="theme_stylesheet" href="dist/css/bootstrap-theme.min.css">
+		<script src="dist/js/bootstrap.min.js"></script>
 
 		<script src="ressources/jsoneditor.min.js"></script>
 		<script>
