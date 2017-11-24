@@ -1,0 +1,44 @@
+{
+	"Servers": [
+		{
+			"name": "Crow",
+			"address": "10.42.0.1",
+			"timeout": 25,
+			"services": [
+				"dns",
+				"http",
+				"https"
+			]
+		},
+		{
+			"name": "Hawk",
+			"address": "10.42.0.2",
+			"timeout": 25,
+			"services": [
+				"http",
+				"https"
+			]
+		},
+		{
+			"name": "Bart",
+			"address": "10.42.0.4",
+			"timeout": 25,
+			"services": [
+				"http",
+				"https"
+			]
+		},
+		{
+			"name": "Seth",
+			"address": "10.42.0.16",
+			"timeout": 25,
+			"services": [
+				"http",
+				"https",
+				"SubSonic",
+				"Transmission",
+				"Plex Media Server"
+			]
+		}
+	]
+}
