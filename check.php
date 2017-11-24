@@ -63,7 +63,12 @@ function pingDomain($name,$ip,$port,$limit=10) {
 		$tooltip='ping : ' . $status . 'ms';
 	}
 	
-	$return = '<a href="http://' . $ip . ':' . $port . '" target="_blank" ><span class="label label-' . $result . '" data-toggle="tooltip" data-placement="bottom" title="' . $tooltip . '">'.$name.' <span class="glyphicon ' . $icon . '" aria-hidden="true"></span></span></a>';
+	$return = '<a href="http://' . $ip . ':' . $port . '" target="_blank" >
+					<span class="label label-' . $result . '" data-toggle="tooltip" data-placement="bottom" title="' . $tooltip . '">
+					'.$name.'
+					<span class="glyphicon ' . $icon . '" aria-hidden="true"></span>
+					</span>
+				</a>';
 	return $return;
 }
 
@@ -90,10 +95,14 @@ foreach ($config->Surveys as $survey) {
 	foreach ($survey->list as $server) {
 		$display .= '
 			<div id="' . $server->name . '" class="status bs-callout bs-callout-primary">
-				<h4><a href="http://' . $server->address . '" target="_blank" ></a>&nbsp;<span data-toggle="tooltip" data-placement="right" title="' . $server->address . '" >' . $server->name . '</span></h4>';
+				<h4>
+					<a href="http://' . $server->address . '" target="_blank" ></a>
+					&nbsp;
+					<span data-toggle="tooltip" data-placement="right" title="' . $server->address . '" >' . $server->name . '</span>
+				</h4>';
 		foreach ($server->services as $service) {
 			$display .= '
-					' . pingDomain($service_name[$service],$server->address,$service_port[$service], $server->timeout);
+				' . pingDomain($service_name[$service],$server->address,$service_port[$service], $server->timeout);
 		}
 		$display .= '
 			</div>
@@ -103,7 +112,7 @@ foreach ($config->Surveys as $survey) {
 	$display .= '
 		</div>
 	</div>
-		';
+	';
 }
 
 echo $display;

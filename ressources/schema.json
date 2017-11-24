@@ -1,0 +1,62 @@
+{
+  "title": "Config",
+  "type": "object",
+  "properties": {
+    "liste_surveys": {
+      "title": "Survey",
+      "type": "array",
+      "items": {
+        "title": "Serveur",
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Nom"
+          },
+          "address": {
+            "type": "string",
+            "title": "URL"
+          },
+          "timeout": {
+            "type": "integer",
+            "title": "Time Out"
+          },
+          "services": {
+            "title": "Services surveillés",
+            "type": "array",
+            "items": {
+              "type": "string",
+              "title": "",
+              "watch": {
+                "tadatruc" : "liste_services"
+              },
+              "enumSource": [{
+                  "source": "tadatruc",
+                  "value": "{{item.name}}"
+                }]
+            }
+          }
+        }
+      }
+    },
+    "liste_services": {
+      "title": "Services",
+      "type": "array",
+      "format": "table",
+      "uniqueItems": true,
+      "items": {
+        "title": "Services",
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Nom du service"
+          },
+          "port": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 65535
+          }
+        }
+      }
+    }
+  }
+}

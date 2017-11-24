@@ -23,18 +23,19 @@
 		<link rel="stylesheet" id="theme_stylesheet" href="dist/css/bootstrap-theme.min.css">
 		<script src="dist/js/bootstrap.min.js"></script>
 
-		<script src="ressources/jsoneditor.min.js"></script>
+		<script src="dist/js/jsoneditor.min.js"></script>
 		<script>
 		// Set the default CSS theme and icon library globally
 			JSONEditor.defaults.theme = 'bootstrap3';
-			JSONEditor.defaults.iconlib = 'undefined';
+			JSONEditor.defaults.iconlib = 'bootstrap3';
 		</script>
 			
 		<script type="text/javascript">
 			function refresh()
 			{
 				//document.getElementById('reload').style.visibility='visible';
-				$( "#status" ).load( "check.php" , function() { $('[data-toggle="tooltip"]').tooltip(); });
+				$( "#status" ).load( "check.php");
+				$('[data-toggle="tooltip"]').tooltip();
 			}
 		</script>
 	</head>
@@ -47,7 +48,8 @@
 			<p>tout le bazar de la maison en une seule page !</p>
 		</div>
 		
-		<div id="status" ></div>
+		<div id="status" >
+		</div>
 		
 		<script type="text/javascript">
 			refresh();
