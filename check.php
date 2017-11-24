@@ -76,8 +76,7 @@ $json_file = file_get_contents('ressources/config.json');
 $config = json_decode($json_file);
 
 foreach ($config->Services_list as $service) {
-	$service_name[$service->id] = $service->name ;
-	$service_port[$service->id] = $service->port ;
+	$service_port[$service->name] = $service->port ;
 }
 
 $display = '
