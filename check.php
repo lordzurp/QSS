@@ -68,7 +68,7 @@ function pingDomain($name,$ip,$port,$limit=10) {
 					'.$name.'
 					<span class="glyphicon ' . $icon . '" aria-hidden="true"></span>
 					</span>
-				</a>';
+				</a>&nbsp;';
 	return $return;
 }
 
@@ -101,7 +101,7 @@ foreach ($config->Surveys as $survey) {
 				</h4>';
 		foreach ($server->services as $service) {
 			$display .= '
-				' . pingDomain($service_name[$service],$server->address,$service_port[$service], $server->timeout);
+				' . pingDomain($service,$server->address,$service_port[$service], $server->timeout);
 		}
 		$display .= '
 			</div>

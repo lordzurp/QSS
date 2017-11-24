@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 	<head>
 		<meta charset="UTF-8" >
 		<meta name="description" content="QSS, a small script for webservices supervision.">
@@ -20,41 +20,35 @@
 		
 		<!-- Bootstrap core CSS -->
 		<link rel="stylesheet" id="theme_stylesheet" href="dist/css/bootstrap.min.css">
-		<link rel="stylesheet" id="theme_stylesheet" href="dist/css/bootstrap-theme.min.css">
 		<script src="dist/js/bootstrap.min.js"></script>
-
-		<script src="dist/js/jsoneditor.min.js"></script>
-		<script>
-		// Set the default CSS theme and icon library globally
-			JSONEditor.defaults.theme = 'bootstrap3';
-			JSONEditor.defaults.iconlib = 'bootstrap3';
-		</script>
 			
 		<script type="text/javascript">
 			function refresh()
 			{
-				//document.getElementById('reload').style.visibility='visible';
-				$( "#status" ).load( "check.php");
-				$('[data-toggle="tooltip"]').tooltip();
+				document.getElementById('reload').style.visibility='visible';
+				$( "#status" ).load( "check.php" , function() { 
+					document.getElementById('reload').style.visibility='hidden';
+					$('[data-toggle="tooltip"]').tooltip(); 
+				});
 			}
 		</script>
 	</head>
 	
 	<body>
-	<div class="container">
+		<div class="container">
 	
-		<div class="jumbotron">
-			<h1>Da Zurp House</h1>
-			<p>tout le bazar de la maison en une seule page !</p>
-		</div>
+			<div class="jumbotron">
+				<h1>Da Zurp House</h1>
+				<p>tout le bazar de la maison en une seule page !</p>
+				<div id="reload"><h4><span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span></h4></div>
+			</div>
 		
-		<div id="status" >
-		</div>
+			<div id="status" ></div>
 		
-		<script type="text/javascript">
-			refresh();
-			setInterval(function () {refresh()}, 2000);
-		</script>
-	</div>
+			<script type="text/javascript">
+				refresh();
+				setInterval(function () {refresh()}, 10000);
+			</script>
+		</div>
 	</body>
 </html>

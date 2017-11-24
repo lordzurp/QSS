@@ -6,33 +6,41 @@
 					"address": "10.42.0.1",
 					"timeout": 25,
 					"services": [
-					"dns",
-					"http",
-					"SSH"
-					]},
+						"dns",
+						"http",
+						"SSH"
+					]
+				},
 				{	"name": "Hawk",
 					"address": "10.42.0.4",
 					"timeout": 25,
 					"services": [
-					"http"
-					]},
+						"http",
+						"SSH"
+					]
+				},
 				{	"name": "Bart",
 					"address": "10.42.0.5",
 					"timeout": 25,
 					"services": [
-					"http"
-					]},
+						"http",
+						"SSH"
+					]
+				},
 				{	"name": "Seth",
 					"address": "10.42.0.16",
 					"timeout": 25,
 					"services": [
-					"http",
-					"SubSonic",
-					"Transmission",
-					"Plex Media Server",
-					"monitorix"
-					]}
-			]},
+						"SSH",
+						"http",
+						"SubSonic",
+						"Transmission",
+						"Plex Media Server",
+						"monitorix"
+					]
+				}
+			]
+		},
 		{	"title": "Multimedia",
 			"list": [
 				{	"name": "Ampli",
@@ -41,29 +49,77 @@
 					"services": [
 						"http",
 						"Telnet"
-					]},
+					]
+				},
 				{	"name": "TV",
 					"address": "zurptv",
 					"timeout": 25,
 					"services": [
 						"http"
-					]},
+					]
+				},
 				{	"name": "Shield TV",
 					"address": "shield",
 					"timeout": 25,
 					"services": [
 						"Heartbeat"
-					]},
+					]
+				},
 				{	"name": "Imprimante",
 					"address": "printer",
 					"timeout": 25,
 					"services": [
 						"http"
-					]}
-			]}
+					]
+				}
+			]
+		},
+		{	"title": "OVH",
+			"list": [
+				{	"name": "Odin",
+					"address": "odin.zurp.xyz",
+					"timeout": 100,
+					"services": [
+						"SSH",
+						"dns",
+						"http",
+						"https",
+						"webmin",
+						"mySQL"
+					]
+				},
+				{	"name": "Rigg",
+					"address": "lastmail.xyz",
+					"timeout": 200,
+					"services": [
+						"SSH",
+						"dns",
+						"http",
+						"https",
+						"imap",
+						"imaps",
+						"pop3",
+						"pop3s",
+						"smtp",
+						"smtps"
+					]
+				},
+				{	"name": "Loki",
+					"address": "loki.zurp.xyz",
+					"timeout": 100,
+					"services": [
+						"SSH",
+						"dns",
+						"http",
+						"https",
+						"webmin",
+						"mySQL"
+					]
+				}
+			]
+		}
 	],
-	//"Services_list": [  
-	"liste_services": [
+	"Services_list": [  
 		{	"name": "dns",
 			"port": 53
 		},
