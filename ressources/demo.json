@@ -1,6 +1,7 @@
 {
 	"Surveys_list": [
-		{	"title": "Demo",
+		{	
+			"title": "Demo",
 			"list": [
 				{
 					"name": "Google",
@@ -20,10 +21,33 @@
 					]
 				},
 				{
+					"name": "mySQL demo",
+					"address": "ensembldb.ensembl.org",
+					"timeout": 100,
+					"services": [
+						"mySQL"
+					]
+				}
+			]
+		},
+		{	
+			"title": "Webmails",
+			"list": [
+				{
+					"name": "Gmail",
+					"address": "mail.google.com/mail",
+					"timeout": 25,
+					"services": [
+						"http",
+						"https"
+					]
+				},
+				{
 					"name": "Microsoft Live",
 					"address": "157.55.1.215",
 					"timeout": 85,
 					"services": [
+						"pop3",
 						"pop3s"
 					]
 				},
@@ -33,14 +57,6 @@
 					"timeout": 100,
 					"services": [
 						"smtps"
-					]
-				},
-				{
-					"name": "mySQL demo",
-					"address": "ensembldb.ensembl.org",
-					"timeout": 100,
-					"services": [
-						"mySQL"
 					]
 				}
 			]
