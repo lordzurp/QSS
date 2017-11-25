@@ -82,7 +82,7 @@ foreach ($config->Services_list as $service) {
 $display = '
 ';
 
-foreach ($config->Surveys as $survey) {
+foreach ($config->Surveys_list as $survey) {
 	$display .= '				
 		<div class="panel panel-primary">
 			<div class="panel-heading">

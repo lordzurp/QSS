@@ -2,11 +2,12 @@
 	"title": "Config",
 	"type": "object",
 	"properties": {
-		"surveys_list": {
+		"Surveys_list": {
 			"title": "Liste Monitor",
 			"type": "array",
 			"items": {
 				"title": "Groupe",
+				"type": "object",
 				"properties": {
 					"title": {
 						"type": "string",
@@ -17,6 +18,7 @@
 						"type": "array",
 						"items": {
 							"title": "Serveur",
+							"type": "object",
 							"properties": {
 								"name": {
 									"type": "string",
@@ -58,6 +60,7 @@
 			"uniqueItems": true,
 			"items": {
 				"title": "Services",
+				"type": "object",
 				"properties": {
 					"name": {
 						"type": "string",
