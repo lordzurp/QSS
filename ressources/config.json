@@ -2,7 +2,8 @@
 	"Surveys_list": [
 		{	"title": "infra",
 			"list": [
-				{	"name": "Crow",
+				{	
+					"name": "Crow",
 					"address": "10.42.0.1",
 					"timeout": 25,
 					"services": [
@@ -11,7 +12,8 @@
 						"SSH"
 					]
 				},
-				{	"name": "Hawk",
+				{	
+					"name": "Hawk",
 					"address": "10.42.0.4",
 					"timeout": 25,
 					"services": [
@@ -19,7 +21,8 @@
 						"SSH"
 					]
 				},
-				{	"name": "Bart",
+				{	
+					"name": "Bart",
 					"address": "10.42.0.5",
 					"timeout": 25,
 					"services": [
@@ -27,7 +30,8 @@
 						"SSH"
 					]
 				},
-				{	"name": "Seth",
+				{	
+					"name": "Seth",
 					"address": "10.42.0.16",
 					"timeout": 25,
 					"services": [

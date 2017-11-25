@@ -72,7 +72,9 @@ function pingDomain($name,$ip,$port,$limit=10) {
 	return $return;
 }
 
-$json_file = file_get_contents('ressources/config.json');
+// demo.json for GitHub purpose
+$json_file = file_get_contents('ressources/demo.json');
+//$json_file = file_get_contents('ressources/config.json');
 $config = json_decode($json_file);
 
 foreach ($config->Services_list as $service) {
